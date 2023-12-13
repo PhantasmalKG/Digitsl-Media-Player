@@ -1,0 +1,134 @@
+<!--
+============================================================================
+The media files used in this project are:
+
+Over The Ocean by | e s c p | https://escp-music.bandcamp.com
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Downtown Walk by | e s c p | https://escp-music.bandcamp.com
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Autumn Dance by | e s c p | https://escp-music.bandcamp.com
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Flow by Alex-Productions | https://onsound.eu/
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 3.0 Unported License (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
+A Little Night Dance by | e s c p | https://escp-music.bandcamp.com
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Hot Pepper by Alex-Productions | https://onsound.eu/
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 3.0 Unported License (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
+Urban Rainfall Rhythms by | e s c p | https://escp-music.bandcamp.com
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Louder by Alex-Productions | https://onsound.eu/
+Music promoted by https://www.free-stock-music.com
+Creative Commons / Attribution 3.0 Unported License (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/deed.en_US
+
+
+
+
+
+
+
+
+============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Samuel Aggor" />
+    <meta
+      name="description"
+      content="A mp3/mp4 music player to play and generic music."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Digital MP#/MP4 Player - Samuel Aggor</title>
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="wrapper_music-player">
+        <div class="metadata-container">
+          <div class="track-name">Now Playing: x OF y</div>
+          <div class="track-picture"></div>
+          <div class="track-name"></div>
+          <div class="track-artist"></div>
+        </div>
+      </div>
+      <div class="music-list-icon"></div>
+      <div class="music-timer-container">
+        <div class="currentTime">00:00</div>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="0"
+          class="seeker"
+          onchange="seekTo()"
+        />
+        <div class="total-duration-container">00:00</div>
+      </div>
+      <div class="volume_containter">
+        <i class="fa-solid fa-volume-xmark"></i>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="99"
+          class="volume_slider"
+          onchange="setVolume()"
+        />
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
+
+      <div class="button-container">
+        <div class="track-shuffle" onclick="randomTrack()">
+          <i class="fa-solid fa-shuffle" title="shuffle"></i>
+        </div>
+
+        <div class="track-shuffle">
+          <i class="fa-solid fa-shuffle" title="rewind"></i>
+        </div>
+        <div class="track-previous">
+          <i class="fa-solid fa-backward-step" title="prevTrack"></i>
+        </div>
+        <div class="track-shuffle">
+          <i class="fa-solid fa-play 4x" title="play/pause"></i>
+        </div>
+        <div class="track-shuffle">
+          <i class="fa-solid fa-forward-step" title="nextTrack"></i>
+        </div>
+        <div class="track-shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </div>
+
+        <div class="track-shuffle" onclick="">
+          <i class="fa-solid fa-shuffle" title="repeat"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/ae14879497.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
